@@ -7,11 +7,11 @@ const protect = asyncHandler(async (req, res, next) => {
 
   if (
     req.headers.authorization &&
-    req.header.authorization.startsWith("Bearer")
+    req.headers.authorization.startsWith("Bearer")
   ) {
     try {
       // Get token from header
-      token = req.header.authorization.split(" ")[1];
+      token = req.headers.authorization.split(" ")[1];
 
       // Verify token
       const decoded = jwt.verify(token, process.env.JWT_SECRET);
