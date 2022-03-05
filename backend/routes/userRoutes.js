@@ -14,4 +14,3 @@ router.get("/me", protect, getMe);
 
 module.exports = router;
 
-1
