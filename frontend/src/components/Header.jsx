@@ -9,7 +9,7 @@ function Header() {
       </div>
       <ul>
         <li>
-          <Link to="/">
+          <Link to="/login">
             <FaSignInAlt /> Login
           </Link>
         </li>
